@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    enum currentLight {
+    enum CurrentLight {
         case red, yellow, green
     }
     
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var startButton: UIButton!
     
-    var currentLight = currentLight.red
+    var currentLight = CurrentLight.red
     
     let lightOn: CGFloat = 1
     let lightOf: CGFloat = 0.3
@@ -47,7 +47,20 @@ class ViewController: UIViewController {
     @IBAction func startButtonPress() {
         startButton.setTitle("NEXT", for: .normal)
         
-        switch currentLight
+        switch currentLight {
+        case .red:
+            greenLight.alpha = lightOf
+            redLight.alpha = lightOn
+            currentLight = .yellow
+        case .yellow:
+            redLight.alpha = lightOf
+            yellowLight.alpha = lightOn
+            currentLight = .green
+        case .green:
+            greenLight.alpha = lightOn
+            yellowLight.alpha = lightOf
+            currentLight = .red
+        }
     }
 }
 

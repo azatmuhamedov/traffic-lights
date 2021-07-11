@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="traffic_lights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
-                                <rect key="frame" x="137" y="100" width="140" height="140"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
+                                <rect key="frame" x="149.66666666666666" y="100" width="114.99999999999997" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
-                                <rect key="frame" x="137" y="281" width="140" height="122"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
+                                <rect key="frame" x="149.66666666666666" y="281" width="114.99999999999997" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
-                                <rect key="frame" x="166.5" y="746" width="81" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
+                                <rect key="frame" x="70" y="616" width="274" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="FPu-jS-P3R" secondAttribute="height" multiplier="152:79" id="L3x-kX-vz8"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="start">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -38,25 +38,14 @@
                                     <action selector="startButtonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZD-ar-rBL"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
-                                <rect key="frame" x="137" y="452" width="140" height="122"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
+                                <rect key="frame" x="149.66666666666666" y="452" width="114.99999999999997" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="0Pp-4e-DHg"/>
-                            <constraint firstItem="gvg-sV-uxi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="0me-I0-K5w"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="sHm-DY-Fvi" secondAttribute="centerX" id="2C1-57-4h3"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166.5" id="8rs-q8-ZWX"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="fNh-cJ-YOm" secondAttribute="centerX" id="WnG-JE-t8K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPu-jS-P3R" secondAttribute="bottom" constant="74" id="bqD-nr-yUa"/>
-                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="dgg-0L-cVI"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="gvg-sV-uxi" secondAttribute="centerX" id="nkZ-7t-6bw"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pZr-RJ-bcA"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zNr-h2-nZ5"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLight" destination="fNh-cJ-YOm" id="m3d-pV-N4w"/>
@@ -67,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="174"/>
+            <point key="canvasLocation" x="-94" y="117"/>
         </scene>
     </scenes>
     <resources>
