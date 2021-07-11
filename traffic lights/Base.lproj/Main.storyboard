@@ -19,16 +19,10 @@
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
                                 <rect key="frame" x="137" y="100" width="140" height="140"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="gvg-sV-uxi" secondAttribute="height" multiplier="1:1" id="IDd-hY-3Lp"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
                                 <rect key="frame" x="137" y="281" width="140" height="122"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="sHm-DY-Fvi" secondAttribute="height" multiplier="70:61" id="aY7-q2-b2m"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
                                 <rect key="frame" x="166.5" y="746" width="81" height="42"/>
@@ -40,13 +34,13 @@
                                 <state key="normal" title="start">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZD-ar-rBL"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
                                 <rect key="frame" x="137" y="452" width="140" height="122"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="fNh-cJ-YOm" secondAttribute="height" multiplier="70:61" id="Xdw-rj-EZo"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="230"/>
+            <point key="canvasLocation" x="283" y="174"/>
         </scene>
     </scenes>
     <resources>
