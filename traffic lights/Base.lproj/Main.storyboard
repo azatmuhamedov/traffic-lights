@@ -16,21 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
-                                <rect key="frame" x="152" y="96" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
+                                <rect key="frame" x="137" y="100" width="140" height="140"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gvg-sV-uxi" secondAttribute="height" multiplier="1:1" id="IDd-hY-3Lp"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
-                                <rect key="frame" x="152" y="280" width="140" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
+                                <rect key="frame" x="137" y="281" width="140" height="122"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sHm-DY-Fvi" secondAttribute="height" multiplier="70:61" id="aY7-q2-b2m"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
-                                <rect key="frame" x="131" y="709" width="152" height="79"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
+                                <rect key="frame" x="166.5" y="746" width="81" height="42"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="2Xv-SU-jHd"/>
                                     <constraint firstAttribute="width" secondItem="FPu-jS-P3R" secondAttribute="height" multiplier="152:79" id="L3x-kX-vz8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -38,19 +41,35 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
-                                <rect key="frame" x="152" y="447" width="140" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
+                                <rect key="frame" x="137" y="452" width="140" height="122"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fNh-cJ-YOm" secondAttribute="height" multiplier="70:61" id="Xdw-rj-EZo"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="0Pp-4e-DHg"/>
+                            <constraint firstItem="gvg-sV-uxi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="0me-I0-K5w"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="sHm-DY-Fvi" secondAttribute="centerX" id="2C1-57-4h3"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166.5" id="8rs-q8-ZWX"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="fNh-cJ-YOm" secondAttribute="centerX" id="WnG-JE-t8K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPu-jS-P3R" secondAttribute="bottom" constant="74" id="bqD-nr-yUa"/>
+                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:32" id="dgg-0L-cVI"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="gvg-sV-uxi" secondAttribute="centerX" id="nkZ-7t-6bw"/>
                             <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pZr-RJ-bcA"/>
                             <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zNr-h2-nZ5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="fNh-cJ-YOm" id="m3d-pV-N4w"/>
+                        <outlet property="redLight" destination="gvg-sV-uxi" id="dSE-SP-V2t"/>
+                        <outlet property="startButton" destination="FPu-jS-P3R" id="wee-rG-3bv"/>
+                        <outlet property="yellowLight" destination="sHm-DY-Fvi" id="0H5-f8-4XA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
