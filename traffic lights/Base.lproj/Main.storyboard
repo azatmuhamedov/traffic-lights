@@ -17,24 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-sV-uxi">
-                                <rect key="frame" x="150" y="100" width="114" height="115"/>
+                                <rect key="frame" x="150" y="50" width="114" height="115"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gvg-sV-uxi" secondAttribute="height" multiplier="114:115" id="jBy-1R-ctf"/>
+                                    <constraint firstAttribute="width" secondItem="gvg-sV-uxi" secondAttribute="height" multiplier="114:115" id="Wyl-oU-Bxu"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-DY-Fvi">
-                                <rect key="frame" x="150" y="281" width="114" height="115"/>
+                                <rect key="frame" x="150" y="231" width="114" height="115"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="sHm-DY-Fvi" secondAttribute="height" multiplier="114:115" id="WEA-27-LPV"/>
+                                    <constraint firstAttribute="width" secondItem="sHm-DY-Fvi" secondAttribute="height" multiplier="114:115" id="svJ-UG-uVR"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPu-jS-P3R">
-                                <rect key="frame" x="70" y="616" width="274" height="46"/>
+                                <rect key="frame" x="70" y="566" width="274" height="46"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="FPu-jS-P3R" secondAttribute="height" multiplier="137:23" id="g16-4s-zXi"/>
+                                    <constraint firstAttribute="width" secondItem="FPu-jS-P3R" secondAttribute="height" multiplier="137:23" id="Sxs-o9-lpm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="start">
@@ -45,28 +45,28 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-cJ-YOm">
-                                <rect key="frame" x="150" y="452" width="114" height="115"/>
+                                <rect key="frame" x="150" y="402" width="114" height="115"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="fNh-cJ-YOm" secondAttribute="height" multiplier="114:115" id="RAF-Ed-CDU"/>
+                                    <constraint firstAttribute="width" secondItem="fNh-cJ-YOm" secondAttribute="height" multiplier="114:115" id="TDw-bx-8pd"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gvg-sV-uxi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="1jc-bv-GBa"/>
-                            <constraint firstItem="gvg-sV-uxi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="73a-Ye-yAm"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="137:368" id="9G6-yU-BwA"/>
-                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="DpL-Pv-9JP"/>
-                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FMU-zU-TRe"/>
-                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N0o-Il-LWB"/>
-                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="top" secondItem="sHm-DY-Fvi" secondAttribute="bottom" constant="56" id="S3m-jw-kjO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPu-jS-P3R" secondAttribute="bottom" constant="74" id="SAH-6e-Mj8"/>
-                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T5h-NY-X6i"/>
-                            <constraint firstItem="gvg-sV-uxi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="U4d-LM-3Ns"/>
-                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="top" secondItem="gvg-sV-uxi" secondAttribute="bottom" constant="66" id="VZ8-dz-G9M"/>
-                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="YGs-mu-ueE"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="top" secondItem="fNh-cJ-YOm" secondAttribute="bottom" constant="49" id="GBv-aX-d7G"/>
+                            <constraint firstItem="gvg-sV-uxi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="GHh-JJ-ws3"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HwA-ie-fmn"/>
+                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="top" secondItem="sHm-DY-Fvi" secondAttribute="bottom" constant="56" id="KAO-Zd-3uJ"/>
+                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="KzX-Xz-cQl"/>
+                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="top" secondItem="gvg-sV-uxi" secondAttribute="bottom" constant="66" id="QbW-dc-gG6"/>
+                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="57:368" id="TP7-6C-yRA"/>
+                            <constraint firstItem="sHm-DY-Fvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeB-tD-yyP"/>
+                            <constraint firstItem="gvg-sV-uxi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjN-AT-rU5"/>
+                            <constraint firstItem="gvg-sV-uxi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="f4k-fo-ec6"/>
+                            <constraint firstItem="FPu-jS-P3R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="137:368" id="sUN-U3-WbP"/>
+                            <constraint firstItem="fNh-cJ-YOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zG1-sb-xMI"/>
                         </constraints>
                     </view>
                     <connections>
